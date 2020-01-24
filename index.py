@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import logging
 import os
 import pandas as pd 
@@ -13,4 +14,5 @@ def get_urls(tag, n, language):
     urls = [url for url in search(tag, stop=n, lang=language)][:n]
     return urls
 
-get_urls('movie rating', 5 , 'en')
+mine = get_urls('https://www.assentcompliance.com/', 5 , 'en')
+print (mine)
