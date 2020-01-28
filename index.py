@@ -2,7 +2,19 @@ import requests
 import re
 from bs4 import BeautifulSoup
 
-allLinks = [];mails=[]
+#declaring variables
+alllinks = []
+mails = []
+url = "https://www.assentcompliance.com/"
+response = requests.get(url)
+#parse text and get links
+soup = BeautifulSoup(response.text, 'html.parser')
+links = [a.attrs.get('href') for a in soup.select('a[href]')]
+
+
+
+allLinks = []
+mails=[]
 url = 'https://kore.ai/'
 response = requests.get(url)
 soup=BeautifulSoup(response.text,'html.parser')
