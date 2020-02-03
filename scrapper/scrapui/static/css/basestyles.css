@@ -1,4 +1,7 @@
-h1
-{
-  color: green;
+body{
+    background-color: lightblue;
+}
+.wrap{
+    color: black;
+    width: 100vh;
 }

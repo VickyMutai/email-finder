@@ -1,8 +1,51 @@
-{% extends 'base/base.html' %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Favorite Email Extractor</title>
+    <style>
+    body{
+        height: 100vh;
+    }
+    .header{
+        background: black;  
+    }
+    .wrapper{
+        background-color: linen;
 
-{{block.super}}
-<div class="container">
-    <h1>Works well</h1>
-</div>
-{% endblock %}
+        margin-top: 15%;
+        margin-left: 20%;
+    }
+    .search-box{
+        width: 60%;
+        font-size: 20px;  
+        color: black;      
+    }
+    .btn{
+        font-size: 20px;  
+        color: black;   
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <nav class="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a style="color: white;font-family:'Pacifico', cursive; font-size:xx-large;" class="text-center">Find Email</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+        <div class="wrapper">
+            <form action="">
+                <input type="text" placeholder="Enter Company Url here:" class="search-box">
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
