@@ -9,7 +9,7 @@ chardet==3.0.4
 constantly==15.1.0
 cryptography==2.8
 cssselect==1.1.0
-Django==3.0.2
+Django==3.0.12
 django-bootstrap4==1.1.1
 django-fontawesome-5==1.0.17
 google==2.0.3
